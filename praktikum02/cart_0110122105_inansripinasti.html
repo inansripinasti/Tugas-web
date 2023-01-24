@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cart{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--buat navbar-->
+        <nav style="background-color: antiquewhite; padding: 20px; position: fixed; top:0; left: 0; width: 100%;">
+            <b>inan's SHOP</b>
+            <a href="#">fashion</a>|
+            <a href="#">decoration</a>|
+            <a href="#">accessoris</a>
+            <img src="image/Shopping-Cart-icon.png" alt="keranjang" width="30px" align="right">
+        </nav>
+    </header>
+    <main>
+        <div>
+        <h1 class="cart">your cart</h1>
+        <table border="1">
+            <tr>
+                <th>item</th>
+                <th>price</th>
+                <th>quantity</th>
+            </tr>
+            <tr>
+                <td> <img src="image/shopping.webp" alt="lilin aromatik" width="250px"> </td>
+                <td>Rp. 30.000,-</td>
+                <td><select name="number" id="">
+                        <option value="number">1</option>
+                        <option value="number">2</option>
+                        <option value="number">3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="right">sub total : Rp. 30.000,-</td>
+            </tr>
+        </table>
+        </div>
+        <div>
+        <h1>summary (1 item)</h1>
+            <table border="none">
+                <tr>
+                    <td>sub total</td>
+                    <td align="right">Rp. 30.000</td>
+                </tr>
+                <tr>
+                    <td>shipping</td>
+                    <td align="right">-</td>
+                </tr>
+                <tr>
+                    <td>est texas</td>
+                    <td align="right">-</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">total  : Rp. 30.000,-</td>
+                </tr>                 
+            </table>
+            <button>checkout</button>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <b>inan's SHOP</b>
+        <ul style="square">
+            <li><a href="#">fashion</a></li>
+            <li><a href="#">decoration</a></li>
+            <li><a href="#">accessoris</a></li>
+        </ul>
+            <p>stay in touch! join our newsletter</p>
+            <input type="email" class="field" placeholder="youremail@gmail.com"/> <button>subscribe</button>
+    </footer>
+</body>
+</html>
