@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form pemesanan barang</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
+        .picture {
+            float: left;
+            width: 20%;
+        }
+        form {
+            float: right;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav style="text-align: center;">
+        <fieldset>
+        <a href="#">Home</a>|
+        <a href="#">Generate Link</a>|
+        <a href="#">Transaction History</a>|
+        <a href="#">Policy</a>|
+        <a href="#">Logout</a>
+        </fieldset>
+    </nav>
+    </header>
+    <main>
+        <div class="picture">
+        <img src="img/kotak.png" alt="Upload picture" width="225px" style="margin-top: 100px;">
+        <button>Upload Picture</button>
+        </div>
+        <form action="">
+        <table style="margin-top: 100px;">
+            <tbody>
+                <tr>
+                    <td><label for="title">Title Here</label></td>
+                    <td>: <input type="text" id="title" value="MacBook Air E800"></td>
+                </tr>
+                <tr>
+                    <td><label for="description">Description</label></td>
+                    <td>: <textarea id="description" widht="40px">year : 2009 model : condition : mint</textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="no-account">Account Number</label></td>
+                    <td>: <input type="vachart" id="no-account" value="123-456-789-0"></td>
+                </tr>
+                <tr>
+                    <td><label for="bank">Bank</label></td>
+                    <td>: <select id="bank">
+                            <option value="hsbc">HSBC</option>
+                            <option value="bca">BCA</option>
+                            <option value="bni">BNI</option>
+                            <option value="bri">BRI</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="holder">Account Holder</label></td>
+                    <td>: <input type="text" id="holder" value="Name Here"></td>
+                </tr>
+                <tr>
+                    <td><label for="transaction">Transaction</label></td>
+                    <td>: <select name="number" id="">
+                        <option value="number">1</option>
+                        <option value="number">2</option>
+                        <option value="number">3</option>
+                    </select>
+                </tr>
+                <tr>
+                    <td><label></label></td>
+                    <td>*if the transaction is for 3 person choose 3 form the drop down list
+                        <ul style="list-style-type: none; color: green;">
+                            <li>
+                                <input type="checkbox" id="send-to-hp" checked>
+                                <label for="send-to-hp">Send to Mobile Phone</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="send-to-email" checked >
+                                <label for="send-to-email">Send to Email</label>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="send-phone">Send to Mobile Phone</label></td>
+                    <td>: <input type="varchart" id="send-phone" value="1234567890. 1234567891"></td>
+                </tr>
+                <tr>
+                    <td><label for="send-email">Send to Email</label></td>
+                    <td>: <input type="email" id="send-email" value="mfmm2g13@sotoan.ac.uk, fys_06@yahoo.com"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button style="background-color: green; color: white;">Generate Nabr Link</button>
+        </form>
+    </main>
+</body>
+</html>

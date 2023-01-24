@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hasil pemesanan barang</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
+        img {
+            float: left;
+            width: 20%;
+        }
+        form {
+            float: right;
+            width: 70%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="text-align: center;">
+            <fieldset>
+            <a href="#">Home</a>|
+            <a href="#">Generate Link</a>|
+            <a href="#">Transaction History</a>|
+            <a href="#">Policy</a>|
+            <a href="#">Logout</a>
+            </fieldset>
+        </nav>
+    </header>
+        <main>
+            <img src="img/kotak.png" alt="upload picture" width="200px" style="margin-top: 100px;"><br>
+            <form action="">
+            <table style="margin-top: 100px;">
+                <tbody>
+                    <tr>
+                        <td><label for="title">Title Here</label></td>
+                        <td>: MacBook Air E800</td>
+                    </tr>
+                    <tr>
+                        <td><label for="description">Description</label></td>
+                        <td>: Year : 2009</td>
+                    </tr>
+                    <tr>
+                        <td><label for=""></label></td>
+                        <td>  Model :</td>
+                    </tr>
+                    <tr>
+                        <td><label></label></td>
+                        <td>  Condition : Mint</td>
+                    </tr>
+                    <tr>
+                        <td><label for="total">Total amount</label></td>
+                        <td>: E800</td>
+                    </tr>
+                    <tr>
+                        <td><label for="pay">Pay To</label></td>
+                        <td>: 123-456-789-0</td>
+                    </tr>
+                    <tr>
+                        <td><label for="payment">Payment Type</label></td>
+                        <td>: <select id="payment">
+                                <option value="hsbc">Visa Debit</option>
+                                <option value="bca">BCA</option>
+                                <option value="bni">BNI</option>
+                                <option value="bri">BRI</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="holder">Account Holder</label></td>
+                        <td>: <input type="text" id="holder" value="Name Here"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="acc-no">Account No</label></td>
+                        <td>: <input type="varchart" id="acc-no" value="123-456-789-0"></td>
+                    </tr>
+                    <tr>
+                        <td><label></label></td>
+                        <td><ul style="list-style-type: none; color: green;">
+                                <li>
+                                    <input type="checkbox" id="send-to-hp" checked>
+                                    <label for="send-to-hp">Send to Mobile Phone</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="send-to-email" checked>
+                                    <label for="send-to-email">Send to Email</label>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="send-phone">Send to Mobile Phone</label></td>
+                        <td>: <input type="varchart" id="send-phone" value="1234567890. 1234567891" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="send-email">Send to Email</label></td>
+                        <td>: <input type="email" id="send-email" value="mfmm2g13@sotoan.ac.uk, fys_06@yahoo.com"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button style="background-color: green; color: white;">Pay Using QuidLink</button>
+            </form>
+        </main>
+</body>
+</html>
